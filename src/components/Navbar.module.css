@@ -1,0 +1,67 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling the navbar */
+.navbar {
+  /* background-color: #333; Background color of the navbar */
+  background: linear-gradient(
+    to bottom,
+    #05161a,
+    #072e33,
+    #0f969c,
+    /* #6da5c0, */ #294d61
+  );
+  overflow: hidden; /* Ensures content doesn't overflow */
+  height: 100%;
+  min-height: 100vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar h1 {
+  color: white;
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.navbar li {
+  float: left; /* Aligns list items horizontally */
+  width: 100%;
+}
+
+.navbar li a {
+  display: block;
+  color: white; /* Text color of the links */
+  text-align: center;
+  padding: 1.5vh; /* Padding around the links */
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* Changing link color on hover */
+.navbar li a:hover {
+  background-color: #ddd; /* Background color on hover */
+  color: black; /* Text color on hover */
+}
+
+.last {
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    min-height: 0;
+  }
+  .navbar ul {
+    display: flex;
+  }
+  .last {
+    position: relative;
+    width: 100%;
+    bottom: none;
+    margin-top: 1rem;
+  }
+}

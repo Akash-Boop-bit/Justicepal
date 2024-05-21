@@ -1,0 +1,35 @@
+.main {
+    position: relative;
+    display: flex;
+    height: 100vh;
+}
+
+.main2 {
+    position: fixed;
+    width: 20%;
+}
+
+.main3 {
+    flex-grow: 1;
+    width: 100%;
+    margin-left: 20%;
+}
+
+.btn {
+    position: fixed;
+    
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        flex-direction: column;
+    }
+    .main2 {
+        width: 100%;
+        position: relative;
+    }
+    .main3 {
+        width: 100%;
+        margin-left: 0;
+    }
+}
