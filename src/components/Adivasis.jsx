@@ -2,9 +2,8 @@ import React, { useEffect, useState } from "react";
 import VoiceToTextInput from "./VoiceToTextInput";
 import classes from "./Chat.module.css";
 
-const API = "Your API Key";
 
-function Adivasis() {
+function Adivasis({API}) {
   const [inputText, setInputText] = useState("");
   const [message, setMessage] = useState("");
   const [response, setResponse] = useState([]);

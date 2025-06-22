@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import VoiceToTextInput from "./VoiceToTextInput";
 import classes from "./Chat.module.css";
 
-const API = "sk-Your API Key";
 
-function Religious() {
+
+function Religious({API}) {
   const [inputText, setInputText] = useState("");
   const [message, setMessage] = useState("");
   const [response, setResponse] = useState([]);
