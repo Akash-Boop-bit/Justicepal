@@ -33,14 +33,14 @@ const App = () => {
           {/* <button onClick={nav} className={classes.btn}>click me</button> */}
           <div className={classes.main3}>
             <Routes>
-              <Route path="/" element={<Chat />} />
-              <Route path="/women" element={<Women />} />
-              <Route path="/elderly" element={<Elderly />} />
-              <Route path="/adivasis" element={<Adivasis />} />
-              <Route path="/dalits" element={<Dalits />} />
-              <Route path="/religious" element={<Religious />} />
-              <Route path="/children" element={<Childr />} />
-              <Route path="/disabled" element={<Disabled />} />
+              <Route path="/" element={<Chat API={API}/>} />
+              <Route path="/women" element={<Women API={API}/>} />
+              <Route path="/elderly" element={<Elderly API={API}/>} />
+              <Route path="/adivasis" element={<Adivasis API={API}/>} />
+              <Route path="/dalits" element={<Dalits API={API}/>} />
+              <Route path="/religious" element={<Religious API={API}/>} />
+              <Route path="/children" element={<Childr API={API}/>} />
+              <Route path="/disabled" element={<Disabled API={API}/>} />
               <Route path="/ngo" element={<Ngo />} />
               <Route path="/case" element={<Case />} />
               <Route path="/page1" element={<Page1 />} />
