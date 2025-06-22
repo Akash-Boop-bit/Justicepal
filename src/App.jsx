@@ -17,15 +17,11 @@ import Page2 from "./components/Page2";
 import Page3 from "./components/Page3";
 import Page4 from "./components/Page4";
 
+const API = import.meta.env.VITE_API_KEY;
+
 
 const App = () => {
-  // const [isnav, setIsnav] = useState(true)
 
-  // const nav = ()=> {
-  //   let ele = document.getElementById('nav');
-  //   ele.style.transform = 'translateX(-100%)'
-  //   // setIsnav(!isnav)
-  // }
 
   return (
     <>
